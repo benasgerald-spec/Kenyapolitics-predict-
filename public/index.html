@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenyaPolitics Predict - Political Prediction Market</title>
+    <!-- Proper Tailwind CSS via CDN (for now, will fix later) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #006600 0%, #BB0000 100%); }
+        .market-card { transition: all 0.3s ease; }
+        .market-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .btn-primary { 
+            background: linear-gradient(135deg, #006600 0%, #BB0000 100%); 
+            color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; 
+            transition: all 0.3s ease; 
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0, 102, 0, 0.3); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div id="app" class="min-h-screen">
+        <!-- Loading spinner -->
+        <div class="container mx-auto px-4 py-16 text-center">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
+            <p class="mt-4 text-gray-600">Loading KenyaPolitics Predict...</p>
+        </div>
+    </div>
+
+    <!-- Modals container -->
+    <div id="modals-container"></div>
+
+    <!-- Load our JavaScript -->
+    <script src="/app.js"></script>
+</body>
+</html>
